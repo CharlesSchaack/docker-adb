@@ -33,3 +33,6 @@ ENTRYPOINT ["/sbin/tini", "--"]
 
 # Start the server by default
 CMD ["adb", "-a", "-P", "5037", "server", "nodaemon"]
+
+# Connect to my server
+CMD ["adb", "connect", "192.168.1.92"]
