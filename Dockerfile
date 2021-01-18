@@ -1,5 +1,8 @@
 FROM alpine:3.6
 
+#Set working directory
+WORKDIR /   
+
 # Set up insecure default key
 RUN mkdir -m 0750 /root/.android
 ADD ./files/insecure_shared_adbkey /root/.android/adbkey
